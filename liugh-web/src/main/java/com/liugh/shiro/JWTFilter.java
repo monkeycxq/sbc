@@ -73,6 +73,11 @@ public class JWTFilter extends BasicHttpAuthenticationFilter {
         if(Constant.METHOD_URL_SET.contains(requestURI)){
             return true;
         }
+        //访问静态资源不拦截
+        int aStatic = ((HttpServletRequest) request).getRequestURL().indexOf("static");
+        if(aStatic > -1){
+            return true;
+        }
         if (isLoginAttempt(request, response)) {
             try {
                 executeLogin(request, response);

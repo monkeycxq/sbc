@@ -4,6 +4,23 @@ spring:
     active: dev
   banner:
     location: config/my.txt
+  thymeleaf:
+    #缓冲的配置
+    cache: false
+    check-template: true
+    check-template-location: true
+    #开启MVC thymeleaf 视图解析
+    enabled: true
+    encoding: utf-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html
+  mvc:
+    static-path-pattern: /static/**  #此配置为访问静态资源的url配置
+  resources:
+    static-locations: classpath:/static/  #此配置为静态资源的真实路径
 
 controller:
   scanPackage: com.liugh.controller
@@ -11,4 +28,5 @@ controller:
 #设置统一前缀
 server:
   servlet:
-    context-path: /api/v1
+    context-path: /   #/api/v1
+

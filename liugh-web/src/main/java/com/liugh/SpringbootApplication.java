@@ -17,7 +17,9 @@ import org.springframework.cache.annotation.EnableCaching;
 @MapperScan("com.liugh.mapper")
 @EnableCaching
 public class SpringbootApplication  {
+
 	public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
+
+	    SpringApplication.run(SpringbootApplication.class, args);
     }
 }
