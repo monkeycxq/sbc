@@ -87,10 +87,3 @@ JWT可以跨不同语言，自带身份信息，并且非常容易传递。
 ![](https://oscimg.oschina.net/oscnet/e734e53d9c9e92665fc8eae18168f845686.jpg)
 
 
-第一次做自己的项目，经验不足，如果大家有什么好的意见或批评，请务必issue一下。
-
-加博主进交流群，一起优化进步（或wx搜索：53182347）：
-
-
-
-![](https://oscimg.oschina.net/oscnet/up-82beddfedc2723fc46f04606ac698792659.png)
